@@ -24,9 +24,15 @@
     color: var(--white)
 }
 
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 #showcase {
     background: #333 url('../dist/assets/image/showcase-img.jpg') no-repeat center center/cover;
-    height: 100vh;
+    min-height: 100vh;
     color: var(--white);
 }
 
@@ -39,9 +45,6 @@
 }
 
 .search {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     width: 900px;
 }
 
@@ -50,7 +53,6 @@ input[type='text'] {
     padding: 15px 20px;
     border-radius: 5px;
     border: none;
-    font-size: 16px;
     outline: none;
     box-shadow: 3px 3px 5px 5px rgba(0, 0, 0, 0.3);
 }
@@ -61,8 +63,42 @@ input[type='text'] {
     background-color: var(--primary-color);
     margin-left: -80px;
     border-radius: 5px;
-    color: #fff;
+    color: var(--white);
     cursor: pointer;
-    font-size: 16px;
     outline: none;
+}
+
+.current-temp {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-thermometer-full {
+    font-size: 135px;
+    padding: 0 50px;
+}
+
+.temp {
+    font-size: 100px;
+    padding: 0 30px;
+}
+
+.location-info, .extra-info {
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+.extra-info-title {
+    margin-bottom: 15px;
+}
+
+.left-metrics {
+    border-right: 1px solid rgb(74, 71, 71);
+}
+
+.right-metrics, .left-metrics {
+    width: 100%;
+    padding: 0 50px;
 }
