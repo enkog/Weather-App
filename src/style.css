@@ -1,7 +1,20 @@
-body {
-    background-color: bisque;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.hello {
-    color: red;
+/* Showcase Section */
+#showcase {
+    background: #333 url('../dist/assets/image/showcase-img.jpg') no-repeat center center/cover;
+    height: 100vh;
+    color: #fff;
+}
+
+#showcase .showcase-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 100%;
+    padding: 0 2rem;
 }
