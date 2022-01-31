@@ -57,11 +57,11 @@ input[type='text'] {
     box-shadow: 3px 3px 5px 5px rgba(0, 0, 0, 0.3);
 }
 
-  input[type='submit'] {
+input[type='submit'] {
     padding: 12px 10px;
     border: none;
     background-color: var(--primary-color);
-    margin-left: -80px;
+    margin-left: -70px;
     border-radius: 5px;
     color: var(--white);
     cursor: pointer;
@@ -87,6 +87,9 @@ input[type='text'] {
 
 .location-info, .extra-info {
     font-size: 28px;
+}
+
+.extra-info {
     margin-bottom: 40px;
 }
 
@@ -96,9 +99,11 @@ input[type='text'] {
 
 .left-metrics {
     border-right: 1px solid rgb(74, 71, 71);
+    width: 100%;
+    padding-right: 50px;
 }
 
-.right-metrics, .left-metrics {
+.right-metrics {
     width: 100%;
-    padding: 0 50px;
+    padding-left: 50px;
 }
