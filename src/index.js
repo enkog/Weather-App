@@ -34,6 +34,12 @@ const displayWeather = (data) => {
     document.querySelector('.wind').textContent = `${speed} km/h`;
     document.querySelector('.description').textContent = description;
     document.querySelector('.pressure').textContent = `${pressure} hPa`;
-  }
+}
+
+document.querySelector('.search-btn1').addEventListener('click', (event) => {
+    event.preventDefault();
+    const country = document.querySelector('.search-weather').value;
+    fetchWeather(country);
+})
 
 document.getElementById('date-time').textContent = DateTime.now().toLocaleString(DateTime.DATETIME_MED).toString();

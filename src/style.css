@@ -75,10 +75,8 @@ input[type='submit'] {
     align-items: center;
 }
 
-.fa-thermometer-full {
-    font-size: 135px;
-    padding: 0 50px;
-    color: var(--primary-color);
+.weather-icon {
+    width: 360px !important;
 }
 
 .temp {
@@ -121,4 +119,13 @@ input[type='submit'] {
     margin-bottom: 30px;
     font-weight: bold;
     color: var(--primary-color);
+}
+
+.city {
+    text-transform: capitalize;
+}
+
+.no-data {
+    font-size: 28px;
+    font-weight: bold;
 }
