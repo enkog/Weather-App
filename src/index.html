@@ -13,8 +13,8 @@
             <div class="showcase-content">
                 <div class="search flex">
                     <form action="" id="cityForm">
-                        <input type="text" placeholder="Get country/city weather" autofocus required />
-                        <input type="submit" value="Search" />
+                        <input type="text" class="search-weather" placeholder="Get country/city weather" autofocus required />
+                        <input type="submit" value="Search" class="search-btn1" />
                     </form>
                     <form action="" id="cityForm">                      
                         <input type="text" placeholder="Coldest and warmest by country" autofocus required />
@@ -22,55 +22,37 @@
                     </form>
                 </div>
                 <div class="current-temp">
-                    <i class="fas fa-thermometer-full"></i>
+                    <img src="" alt="" class="weather-icon" />
                     <div class="temp-details">
                       <p class="location-info">
-                        <span class="city">Lagos, </span
-                        ><span class="country">NG</span>
+                        <span class="city"></span
+                        ><span class="country"></span>
                       </p>
                       <div class="temp">
-                        <span class="main-temp">19°</span>
-                        <span class="temp-unit">C</span>
-                        <span class="temp-unit hidden">F</span>
+                        <span class="main-temp"></span>
                       </div>
                     </div>
                 </div>
                 <div class="temp-metrics flex">
                     <div class="left-metrics">
                         <div class="flex extra-info-title">
-                            <p class="sunrise">Sunrise</p>
-                            <p class="sunset">Sunset</p>
+                            <p>Description</p>
+                            <p>Wind Speed</p>
                         </div>
                         <div class="flex extra-info">
-                            <p class="sunrise">07:50 AM</p>
-                            <p class="sunset">07:32 PM</p>
-                        </div>
-                        <div class="flex extra-info-title">
-                            <p class="sunrise">Condition</p>
-                            <p class="sunset">Air Quality</p>
-                        </div>
-                        <div class="flex extra-info">
-                            <p class="sunrise">Broken clouds</p>
-                            <p class="sunset">Very Poor</p>
+                            <p class="description"></p>
+                            <p class="wind"></p>
                         </div>
                     </div>
                     <div class="right-metrics">
                         <div class="flex extra-info-title">
-                            <p class="sunrise">Feels like</p>
-                            <p class="sunset">Pressure</p>
+                            <p>Humidity</p>
+                            <p>Pressure</p>
                         </div>
                         <div class="flex extra-info">
-                            <p class="sunrise">17.65°</p>
-                            <p class="sunset">1014 hPa</p>
+                            <p class="humidity"></p>
+                            <p class="pressure"></p>
                         </div>
-                        <div class="flex extra-info-title">
-                            <p class="sunrise">Humidity</p>
-                            <p class="sunset">Wind</p>
-                        </div>
-                        <div class="flex extra-info">
-                            <p class="sunrise">16%</p>
-                            <p class="sunset">3.8 m/s</p>
-                        </div> 
                     </div>
                 </div>
             </div>
