@@ -43,3 +43,8 @@ document.querySelector('.search-btn1').addEventListener('click', (event) => {
 })
 
 document.getElementById('date-time').textContent = DateTime.now().toLocaleString(DateTime.DATETIME_MED).toString();
+
+window.addEventListener('load', (event) => {
+    event.preventDefault();
+    fetchWeather();
+});
