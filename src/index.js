@@ -1,4 +1,5 @@
 import _ from 'lodash';
+import $ from 'jquery';
 import { DateTime } from './luxon.js';
 import './style.css';
 import axios from 'axios';
@@ -11,11 +12,8 @@ const fetchWeather = async (city = 'Lagos') => {
         const response = await axios.get(`${baseUrl}weather?q=${city}&units=metric&appid=${apiKey}`);
         displayWeather(response.data);
     } catch (error) {
-        document.querySelector('.current-temp').innerHTML = 
-        `
-        <p class="no-data">No data found for this city !!!</p>
-        `;
-        document.querySelector('.temp-metrics').classList.add('hidden');
+        $('.current-temp').html(`<p class="no-data">No data found for this city !!!</p>`);
+        $('.temp-metrics').addClass('hidden');
     }  
 }
 
@@ -26,25 +24,25 @@ const displayWeather = (data) => {
     const {humidity, temp, pressure} = data.main;
     const {speed} = data.wind;
 
-    document.querySelector('.city').textContent = `${name}, `;
-    document.querySelector('.country').textContent = country;
-    document.querySelector('.main-temp').textContent = `${temp}°C`;
-    document.querySelector('.weather-icon').src = `https://openweathermap.org/img/wn/${icon}@2x.png`;
-    document.querySelector('.humidity').textContent = `${humidity}%`;
-    document.querySelector('.wind').textContent = `${speed} km/h`;
-    document.querySelector('.description').textContent = description;
-    document.querySelector('.pressure').textContent = `${pressure} hPa`;
+    $(".city").text(`${name}, `);
+    $(".country").text(country);
+    $('.main-temp').text (`${temp}°C`);
+    $('.weather-icon').attr("src", `https://openweathermap.org/img/wn/${icon}@2x.png`);
+    $('.humidity').text (`${humidity}%`);
+    $('.wind').text (`${speed} km/h`);
+    $('.description').text (description);
+    $('.pressure').text (`${pressure} hPa`);
 }
 
-document.querySelector('.search-btn1').addEventListener('click', (event) => {
-    event.preventDefault();
-    const country = document.querySelector('.search-weather').value;
+$(".search-btn1").on("click", (e) => {
+    e.preventDefault();
+    const country = $(".search-weather").val();
     fetchWeather(country);
-})
+});
 
-document.getElementById('date-time').textContent = DateTime.now().toLocaleString(DateTime.DATETIME_MED).toString();
+$('#date-time').text(DateTime.now().toLocaleString(DateTime.DATETIME_MED).toString());
 
-window.addEventListener('load', (event) => {
-    event.preventDefault();
+$(window).on('load', (e) => {
+    e.preventDefault();
     fetchWeather();
 });
