@@ -69,7 +69,7 @@ input[type='submit'] {
 }
 
 .current-temp {
-    height: 500px;
+    height: 430px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -86,10 +86,6 @@ input[type='submit'] {
 
 .location-info, .extra-info {
     font-size: 28px;
-}
-
-.extra-info {
-    margin-bottom: 40px;
 }
 
 .extra-info-title {
