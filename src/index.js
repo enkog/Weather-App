@@ -50,8 +50,8 @@ $(".search-btn2").on("click", async (e) => {
     $('.city-temp').text(`${name}, ${temp}°C`);
     $('.current-temp').addClass('hidden');
     $('.temp-metrics').addClass('hidden');
-    $('.coldest-weather').html(`<h2 class="cw-header">Coldest Temperature</h2> <p class="cw-p">${temp_min}</p>`);
-    $('.warmest-weather').html(`<h2 class="cw-header">Warmest Temperature</h2> <p class="cw-p">${temp_max}</p>`);
+    $('.coldest-weather').html(`<h2 class="cw-header">Coldest Temperature</h2> <p class="cw-p">${temp_min}°C</p>`);
+    $('.warmest-weather').html(`<h2 class="cw-header">Warmest Temperature</h2> <p class="cw-p">${temp_max}°C</p>`);
 });
 
 $('#date-time').text(DateTime.now().toLocaleString(DateTime.DATETIME_MED).toString());

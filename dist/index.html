@@ -3,9 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ac0885c8f6.js" crossorigin="anonymous"></script>
     <title>Weather App</title>
 <script defer src="main.js"></script></head>
 <body>
-    <h1>Hello World!</h1>
+    <div id="showcase">
+        <div class="container">
+            <div id="date-time"></div>
+            <div class="showcase-content">
+                <div class="search flex">
+                    <form action="" id="cityForm" autocomplete="on">
+                        <input type="text" class="search-weather1" placeholder="Get country/city weather" name="cityInput" autofocus required />
+                        <input type="submit" value="Search" class="search-btn1" />
+                    </form>
+                    <form action="" id="tempForm" autocomplete="on">                      
+                        <input type="text" class="search-weather2" placeholder="Coldest and warmest by country/city" name="cityTemp" autofocus required />
+                        <input type="submit" value="Search" class="search-btn2" />
+                    </form>
+                </div>
+               
+                <div class="current-temp">
+                    <img src="" alt="" class="weather-icon" />
+                    <div class="temp-details">
+                      <p class="location-info">
+                        <span class="city"></span
+                        ><span class="country"></span>
+                      </p>
+                      <div class="temp">
+                        <span class="main-temp"></span>
+                      </div>
+                    </div>
+                </div>
+                <div class="temp-metrics flex">
+                    <div class="left-metrics">
+                        <div class="flex extra-info-title">
+                            <p>Description</p>
+                            <p>Wind Speed</p>
+                        </div>
+                        <div class="flex extra-info">
+                            <p class="description"></p>
+                            <p class="wind"></p>
+                        </div>
+                    </div>
+                    <div class="right-metrics">
+                        <div class="flex extra-info-title">
+                            <p>Humidity</p>
+                            <p>Pressure</p>
+                        </div>
+                        <div class="flex extra-info">
+                            <p class="humidity"></p>
+                            <p class="pressure"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="country-temp hidden">
+                    <div class="min-max">
+                        <h3 class="city-temp"></h3>
+                        <div class="flex">
+                            <div class="coldest-weather"></div>
+                            <div class="warmest-weather"></div>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
