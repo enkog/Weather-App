@@ -12,23 +12,16 @@
             <div id="date-time"></div>
             <div class="showcase-content">
                 <div class="search flex">
-                    <form action="" id="cityForm">
+                    <form action="" id="Form">
                         <input type="text" class="search-weather1" placeholder="Get country/city weather" autofocus required />
                         <input type="submit" value="Search" class="search-btn1" />
                     </form>
-                    <form action="" id="cityForm">                      
+                    <form action="" id="Form">                      
                         <input type="text" class="search-weather2" placeholder="Coldest and warmest by country" autofocus required />
                         <input type="submit" value="Search" class="search-btn2" />
                     </form>
                 </div>
-                <div class="min-max hidden flex">
-                    <div class="coldest-weather">
-                        jdfkjalf
-                    </div>
-                    <div class="warmest-weather">
-                        sfgsdgsg
-                    </div>
-                </div>
+               
                 <div class="current-temp">
                     <img src="" alt="" class="weather-icon" />
                     <div class="temp-details">
@@ -61,6 +54,15 @@
                             <p class="humidity"></p>
                             <p class="pressure"></p>
                         </div>
+                    </div>
+                </div>
+                <div class="country-temp hidden">
+                    <div class="min-max">
+                        <h3 class="city-temp"></h3>
+                        <div class="flex">
+                            <div class="coldest-weather"></div>
+                            <div class="warmest-weather"></div>
+                        </div>  
                     </div>
                 </div>
             </div>

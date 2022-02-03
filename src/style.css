@@ -125,3 +125,34 @@ input[type='submit'] {
     font-size: 28px;
     font-weight: bold;
 }
+
+.min-max {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.coldest-weather, 
+.warmest-weather {
+    border-radius: 10px;
+    border: 1px solid rgb(65, 65, 65);
+    padding: 50px 50px;
+    color: var(--white);
+    width: 400px;
+    height: 250px;
+    box-shadow: 3px 3px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.city-temp {
+    margin-bottom: 50px;
+    text-transform: capitalize;
+    font-size: 40px;
+}
+
+.cw-header {
+    margin-bottom: 30px;
+}
+.cw-p {
+    font-size: 50px;
+}
